@@ -1,0 +1,8 @@
+{
+  "model": "gemini-3.7-flash",
+  "provider": "gemini",
+  "grounding_compiler": "persona_demographic_v1",
+  "draws_per_respondent": 1,
+  "weighting_mode": "unweighted",
+  "executed_at": "2026-09-01 15:01:12"
+}

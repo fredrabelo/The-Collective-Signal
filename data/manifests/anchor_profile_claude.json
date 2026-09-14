@@ -1,0 +1,8 @@
+{
+  "model": "claude-haiku-4-5",
+  "provider": "anthropic",
+  "grounding_compiler": "persona_demographic_v1",
+  "draws_per_respondent": 1,
+  "weighting_mode": "unweighted",
+  "executed_at": "2026-08-31 23:56:12"
+}

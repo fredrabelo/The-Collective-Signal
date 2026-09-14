@@ -1,0 +1,31 @@
+{
+  "mode": "aggregate",
+  "questions": {
+    "anchor_1st_pct_likelihood": {
+      "n": 34,
+      "mean": 3.794,
+      "sd": 2.1
+    },
+    "anchor_25th_pct_likelihood": {
+      "n": 32,
+      "mean": 4.062,
+      "sd": 2.341
+    },
+    "anchor_50th_pct_likelihood": {
+      "n": 37,
+      "mean": 4.514,
+      "sd": 2.142
+    },
+    "anchor_75th_pct_likelihood": {
+      "n": 24,
+      "mean": 4.792,
+      "sd": 1.817
+    },
+    "anchor_99th_pct_likelihood": {
+      "n": 33,
+      "mean": 5.061,
+      "sd": 1.87
+    }
+  },
+  "sd_source": "Derived aggregate statistic (mean and n from the original study; sd computed here) from the original Kreps et al. (2020) Harvard Dataverse microdata (DOI 10.7910/DVN/6BSJYP), filtered to each anchor profile's exact attribute combination. Raw per-respondent ratings are not redistributed; obtain the .dta directly from Dataverse to recompute."
+}

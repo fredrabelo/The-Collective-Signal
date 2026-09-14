@@ -1,0 +1,18 @@
+{
+  "model": "gemini-3.7-flash",
+  "provider": "gemini",
+  "grounding_compiler": "persona_profile_v1",
+  "exposure_mode": "direct_assignment",
+  "covariates": [
+    "age",
+    "gender",
+    "race",
+    "party",
+    "ideology",
+    "education",
+    "income"
+  ],
+  "frozen_at": "2026-09-05 21:36:18",
+  "started_at": "2026-09-06 09:37:39",
+  "finished_at": "2026-09-06 11:23:00"
+}

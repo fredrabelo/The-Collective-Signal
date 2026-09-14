@@ -1,0 +1,37 @@
+[
+  {
+    "source_question_key": "vaxord_1st_pct",
+    "synthetic_question_key": "anchor_1st_pct_likelihood",
+    "question_text": "Please consider the following hypothetical vaccine against COVID-19 (1st pct of predicted acceptance in the original study):\n\nEfficacy: 50%; Duration of protection: 1 year; Chance of a major side effect: 1 in 10,000; Chance of a minor side effect: 1 in 10; FDA approval status: The vaccine has received an emergency use authorization from the US Food and Drug Administration.  This allows the expedited use of promising drugs that the FDA has found it reasonable to believe may be effective in combatting the virus; Country of origin: China; Endorsed by: Vice President Joe Biden.\n\nHow likely or unlikely would you be to get this vaccine? Respond with a single number from 1 to 7, where 1 = Extremely unlikely, 2 = Moderately unlikely, 3 = Slightly unlikely, 4 = Neither likely nor unlikely, 5 = Slightly likely, 6 = Moderately likely, 7 = Extremely likely.",
+    "scale_min": 1,
+    "scale_max": 7
+  },
+  {
+    "source_question_key": "vaxord_25th_pct",
+    "synthetic_question_key": "anchor_25th_pct_likelihood",
+    "question_text": "Please consider the following hypothetical vaccine against COVID-19 (25th pct of predicted acceptance in the original study):\n\nEfficacy: 50%; Duration of protection: 1 year; Chance of a major side effect: 1 in 10,000; Chance of a minor side effect: 1 in 10; FDA approval status: The vaccine has received an emergency use authorization from the US Food and Drug Administration.  This allows the expedited use of promising drugs that the FDA has found it reasonable to believe may be effective in combatting the virus; Country of origin: United Kingdom; Endorsed by: US Centers for Disease Control and Prevention.\n\nHow likely or unlikely would you be to get this vaccine? Respond with a single number from 1 to 7, where 1 = Extremely unlikely, 2 = Moderately unlikely, 3 = Slightly unlikely, 4 = Neither likely nor unlikely, 5 = Slightly likely, 6 = Moderately likely, 7 = Extremely likely.",
+    "scale_min": 1,
+    "scale_max": 7
+  },
+  {
+    "source_question_key": "vaxord_50th_pct",
+    "synthetic_question_key": "anchor_50th_pct_likelihood",
+    "question_text": "Please consider the following hypothetical vaccine against COVID-19 (50th pct of predicted acceptance in the original study):\n\nEfficacy: 90%; Duration of protection: 1 year; Chance of a major side effect: 1 in 1,000,000; Chance of a minor side effect: 1 in 10; FDA approval status: The vaccine has received an emergency use authorization from the US Food and Drug Administration.  This allows the expedited use of promising drugs that the FDA has found it reasonable to believe may be effective in combatting the virus; Country of origin: China; Endorsed by: World Health Organization.\n\nHow likely or unlikely would you be to get this vaccine? Respond with a single number from 1 to 7, where 1 = Extremely unlikely, 2 = Moderately unlikely, 3 = Slightly unlikely, 4 = Neither likely nor unlikely, 5 = Slightly likely, 6 = Moderately likely, 7 = Extremely likely.",
+    "scale_min": 1,
+    "scale_max": 7
+  },
+  {
+    "source_question_key": "vaxord_75th_pct",
+    "synthetic_question_key": "anchor_75th_pct_likelihood",
+    "question_text": "Please consider the following hypothetical vaccine against COVID-19 (75th pct of predicted acceptance in the original study):\n\nEfficacy: 70%; Duration of protection: 5 years; Chance of a major side effect: 1 in 10,000; Chance of a minor side effect: 1 in 30; FDA approval status: The vaccine has received an emergency use authorization from the US Food and Drug Administration.  This allows the expedited use of promising drugs that the FDA has found it reasonable to believe may be effective in combatting the virus; Country of origin: United States; Endorsed by: US Centers for Disease Control and Prevention.\n\nHow likely or unlikely would you be to get this vaccine? Respond with a single number from 1 to 7, where 1 = Extremely unlikely, 2 = Moderately unlikely, 3 = Slightly unlikely, 4 = Neither likely nor unlikely, 5 = Slightly likely, 6 = Moderately likely, 7 = Extremely likely.",
+    "scale_min": 1,
+    "scale_max": 7
+  },
+  {
+    "source_question_key": "vaxord_99th_pct",
+    "synthetic_question_key": "anchor_99th_pct_likelihood",
+    "question_text": "Please consider the following hypothetical vaccine against COVID-19 (99th pct of predicted acceptance in the original study):\n\nEfficacy: 90%; Duration of protection: 5 years; Chance of a major side effect: 1 in 1,000,000; Chance of a minor side effect: 1 in 30; FDA approval status: The vaccine has been approved and licensed by the US Food and Drug Administration.; Country of origin: United Kingdom; Endorsed by: World Health Organization.\n\nHow likely or unlikely would you be to get this vaccine? Respond with a single number from 1 to 7, where 1 = Extremely unlikely, 2 = Moderately unlikely, 3 = Slightly unlikely, 4 = Neither likely nor unlikely, 5 = Slightly likely, 6 = Moderately likely, 7 = Extremely likely.",
+    "scale_min": 1,
+    "scale_max": 7
+  }
+]

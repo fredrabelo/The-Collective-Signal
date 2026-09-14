@@ -1,0 +1,18 @@
+{
+  "model": "claude-haiku-4-5",
+  "provider": "anthropic",
+  "grounding_compiler": "persona_profile_v1",
+  "exposure_mode": "direct_assignment",
+  "covariates": [
+    "age",
+    "gender",
+    "race",
+    "party",
+    "ideology",
+    "education",
+    "income"
+  ],
+  "frozen_at": "2026-09-05 21:34:46",
+  "started_at": "2026-09-05 21:35:29",
+  "finished_at": "2026-09-06 08:55:24"
+}

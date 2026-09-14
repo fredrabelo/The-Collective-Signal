@@ -1,0 +1,26 @@
+{
+  "model": "gemini-3.7-flash",
+  "provider": "gemini",
+  "grounding_compiler": "persona_profile_v1",
+  "exposure_mode": "direct_assignment",
+  "covariates": [
+    "age",
+    "gender",
+    "race",
+    "party",
+    "ideology",
+    "education",
+    "income",
+    "state",
+    "religion",
+    "evangelical",
+    "insurance",
+    "flu_vaccine_frequency",
+    "pharma_industry_favorability",
+    "knows_someone_with_covid",
+    "pandemic_trajectory_view"
+  ],
+  "frozen_at": "2026-09-05 21:37:14",
+  "started_at": "2026-09-06 09:41:24",
+  "finished_at": "2026-09-06 10:39:16"
+}
