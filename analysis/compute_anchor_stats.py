@@ -16,10 +16,8 @@ Two modes for the human-side bootstrap:
      exact attribute combination.
   2. Otherwise, it falls back to a documented NORMAL APPROXIMATION: for each
      bootstrap draw, sample n_profile values from Normal(mean, sd) using the
-     published aggregate statistics. This is not identical to a raw-data
-     bootstrap, but was checked against it during development (raw: 65.8%
-     for the 99th percentile vs. this script's normal approximation and the
-     paper's published 65.3% — all within ~1 point of each other).
+     published aggregate statistics. This closely matches the real bootstrap
+     (mode 1) but is not identical to it.
 
 Usage: python3 compute_anchor_stats.py [n_bootstrap]
 """

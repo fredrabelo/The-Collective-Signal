@@ -83,8 +83,8 @@ python3 check_gemini_missingness.py
 # real respondent-level bootstrap if you provide the original Kreps et al.
 # .dta (see the script's docstring for where to place it — not
 # redistributed here); otherwise it falls back to a documented normal
-# approximation from the published mean/sd/n, which was checked during
-# development against the real bootstrap and lands within ~1 point.
+# approximation from the published mean/sd/n, which closely matches the
+# real bootstrap.
 python3 compute_anchor_stats.py [n_bootstrap]
 
 # Regenerates all four manuscript figures from the values these scripts
