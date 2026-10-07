@@ -68,6 +68,12 @@ python3 compute_matched_replay_amce.py [n_bootstrap]
 # 24-pair battery's respondents contributes ~5x more rows per resample).
 python3 compute_battery_amce.py [n_bootstrap]
 
+# Cross-estimator sensitivity: applies differences in means and OLS to both
+# the assignment-matched replay and the shared 24-pair battery. This checks
+# whether the observed replay--battery difference is an estimator artifact;
+# it is descriptive and does not identify a causal instrument effect.
+python3 check_estimator_sensitivity.py
+
 # Table 4 / Figure 3: shared-battery Republican-minus-Democrat choice gaps
 # by endorsement.
 python3 compute_partisan_gaps.py

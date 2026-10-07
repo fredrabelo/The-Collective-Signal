@@ -17,7 +17,7 @@ HUMAN_AMCE = {
     ("efficacy", 70): 7.35, ("efficacy", 90): 16.58, ("duration", 5): 5.41,
     ("major_side_effect", "1/1m"): 6.58, ("minor_side_effect", "1/30"): 1.39,
     ("fda_status", "emergency"): -2.99, ("origin", "UK"): -3.62, ("origin", "China"): -13.23,
-    ("endorsement", "Biden"): 2.02, ("endorsement", "CDC"): 9.20, ("endorsement", "WHO"): 7.75,
+    ("endorsement", "Biden"): 2.02, ("endorsement", "CDC"): 9.20, ("endorsement", "WHO"): 5.75,
 }
 CONTRASTS = list(HUMAN_AMCE.keys())
 VALID_PAIR_KEYS = {"pair%02d_choice" % n for n in range(1, 25)}

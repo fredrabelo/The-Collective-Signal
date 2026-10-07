@@ -6,11 +6,9 @@ Point estimates use the estimator the paper's Method section describes:
 difference in mean choice between each level and its reference, with
 "Neither" counted as zero for both profiles in a pair. Human-side AMCEs are
 computed from matched_instrument_and_truth.json's `human_choice` field —
-the real human choice on each respondent's own 5 realized pairs. They agree
-with the 24-pair battery's human benchmark (Table 3) on 10 of 11 contrasts;
-the WHO-endorsement contrast differs (5.75pp here vs. 7.75pp in Table 3)
-because it is computed under a different (though overlapping) conditioning
-of the same underlying human data.
+the real human choice on each respondent's own 5 realized pairs. These are
+the same human data and difference-in-means benchmark used for comparison
+with the shared battery.
 
 Because the matched-replay design pairs each synthetic respondent to a
 specific human respondent's own 5 pairs, human and synthetic choices are
