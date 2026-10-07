@@ -1,8 +1,8 @@
 # The Collective Signal — Replication Package
 
 Data, analysis code, and figures for the paper *"The Collective Signal:
-Directional Preservation in Conjoint Experiments with Synthetic Populations"*
-(submitted, 2026). The paper reconstructs the preregistered vaccine-choice
+Instrument and Persona Effects in LLM Conjoint Experiments"*
+(under review, 2026). The paper reconstructs the preregistered vaccine-choice
 conjoint experiment of Kreps, Prasad, Brownstein, Hswen, Garibaldi, Zhang &
 Kriner (2020), *"Factors Associated With US Adults' Likelihood of Accepting
 COVID-19 Vaccination,"* *JAMA Network Open* 3(10):e2025594, and tests whether
@@ -114,7 +114,7 @@ See `data/README.md` for exact counts.
 The synthetic responses in `data/*_responses.csv` were generated using an
 internal, not-publicly-released research platform, calling `claude-haiku-4-5`
 and `gemini-3.7-flash` through their respective batch APIs. We do not release
-that platform's source code. The paper's Appendix (Beyond PDF submission)
+that platform's source code. The paper's Appendix
 reproduces the complete, literal prompt text (persona rendering, vignette
 template, and output schema) used to generate every response, which —
 combined with the data in this repository — is sufficient to (a) verify every

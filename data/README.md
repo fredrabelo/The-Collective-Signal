@@ -52,7 +52,7 @@
   — from a single respondent's malformed reply; excluded the same way).
 
 All three response files were exported directly from the two internal
-research-platform databases with `../export_replication_data.py` — a
+research databases with `../export_replication_data.py` — a
 straight SQL export with no proprietary grounding-compiler logic — so the
 CSVs are exactly what the paper's statistics were computed from.
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Export the Kreps et al. (2020) vaccine-conjoint replication data (human +
 synthetic) from MySQL into plain CSVs meant for public release alongside the
-paper "The Collective Signal: Directional Preservation in Conjoint Experiments
-with Synthetic Populations."
+paper "The Collective Signal: Instrument and Persona Effects in LLM Conjoint
+Experiments."
 
 This script contains NO proprietary logic (no grounding-compiler prompts, no
 product code) — it is a straight SQL export + reshape, safe to keep even if
@@ -10,19 +10,23 @@ this repo itself stays private. Only the CSVs it writes are meant to
 accompany the paper submission (in data/).
 
 The three experiments live in two different databases:
-  - "virtuacity": the shared 24-pair battery (runs 24=Claude, 34=Gemini) and
+  - "main": the shared 24-pair battery (runs 24=Claude, 34=Gemini) and
     the five-item anchor-profile instrument (runs 28=Claude, 35=Gemini).
-  - "research-platform": the respondent-matched five-pair replay crossing
+  - "matched": the respondent-matched five-pair replay crossing
     model family with persona richness (runs 69=Claude-basic,
     70=Claude-rich, 71=Gemini-basic, 72=Gemini-rich).
 
-Usage: python3 export_replication_data.py
-Requires: pymysql, the same DB credentials as server/.env (virtuacity) and
-the research-platform database on the same MySQL host.
+Usage: python3 export_replication_data.py [path/to/.env]
+Requires: pymysql and an env file defining DATABASE_HOST, DATABASE_USERNAME,
+DATABASE_PASSWORD (and optionally DATABASE_PORT). The two database names can
+be overridden with DB_MAIN and DB_MATCHED. Run IDs below refer to the
+authors' internal run records and are listed for provenance only; the
+released CSVs in data/ are the reproducibility artifact.
 """
 import csv
 import json
 import os
+import sys
 
 import pymysql
 
@@ -63,7 +67,7 @@ def connect(env, database):
 
 
 def export_battery_and_anchors(env):
-    conn = connect(env, "virtuacity")
+    conn = connect(env, env.get("DB_MAIN", "main"))
     with conn.cursor() as cur, \
          open(os.path.join(OUT_DIR, "shared_battery_responses.csv"), "w", newline="") as f_battery, \
          open(os.path.join(OUT_DIR, "anchor_profile_responses.csv"), "w", newline="") as f_anchor:
@@ -113,7 +117,7 @@ def export_battery_and_anchors(env):
 
 
 def export_matched_replay(env):
-    conn = connect(env, "research-platform")
+    conn = connect(env, env.get("DB_MATCHED", "matched"))
     with conn.cursor() as cur, \
          open(os.path.join(OUT_DIR, "matched_replay_responses.csv"), "w", newline="") as f:
         w = csv.writer(f)
@@ -141,7 +145,7 @@ def export_matched_replay(env):
 
 
 def main():
-    env = load_env(os.path.join(HERE, "..", "..", "..", "..", "server", ".env"))
+    env = load_env(sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, ".env"))
     os.makedirs(OUT_DIR, exist_ok=True)
     export_battery_and_anchors(env)
     export_matched_replay(env)
